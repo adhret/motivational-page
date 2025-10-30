@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Orbitron:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(270deg, #00eaff, #ff00ff, #00ff99);
+  background-size: 600% 600%;
+  animation: gradientShift 10s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradientShift {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px #00ffff;
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { text-shadow: 0 0 10px #00ffff; }
+  50% { text-shadow: 0 0 25px #ff00ff; }
+}
+
+.typewriter {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+  min-height: 40px;
+  text-shadow: 0 0 10px #ff00ff;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.glow-button {
+  padding: 12px 24px;
+  margin: 8px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #ff00ff, #00ffff);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 20px #00ffff;
+}
+
+.glow-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px #ff00ff;
+}
+.small {
+  padding: 8px 18px;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
